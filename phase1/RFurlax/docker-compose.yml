@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  mongodb:
+    image: "mongo"
+    ports:
+      - "27017:27017"
+
+  backend :
+    image : "shivasowmya520/furlaxbackend:latest"
+    ports :
+       - "8000:8000"
+  frontend :
+    image : "shivasowmya520/furlaxfrontend:latest"
+    ports:
+      - "3000:3000"
