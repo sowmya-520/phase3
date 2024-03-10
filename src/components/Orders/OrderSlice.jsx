@@ -17,7 +17,7 @@ export const OrderSlice = createSlice({
 
 export const fetchListOfInvoices = () => async (dispatch) => {
   try {
-    const response = await fetch("http://127.0.0.1:8000/invoices/F", {
+    const response = await fetch("http://16.171.4.184:8000/invoices/F", {
       method: "GET",
     });
     const invoices = await response.json();

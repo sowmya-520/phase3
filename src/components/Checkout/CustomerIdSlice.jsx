@@ -17,7 +17,7 @@ export const CustomerIdSlice = createSlice({
 
 export const fetchUserId = (username) => async (dispatch) => {
   try {
-    const response = await fetch(`http://localhost:8000/username/${username}`, {
+    const response = await fetch(`http://16.171.4.184:8000/username/${username}`, {
       method: "GET",
     });
 

@@ -18,7 +18,7 @@ export const ProductSlice = createSlice({
 export const fetchListOfProducts = (category) => async(dispatch) => {
   try {
     
-    const response =  await fetch(`http://localhost:8000/${category}/` , {
+    const response =  await fetch(`http://16.171.4.184:8000/${category}/` , {
       method:'GET'
     });
 

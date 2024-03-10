@@ -21,7 +21,7 @@ const CheckoutSlice = createSlice({
 
 export const storeinvoice = (invoicedata) => async (dispatch) => {
   try {
-    const response = await fetch("http://127.0.0.1:8000/invoice/", {
+    const response = await fetch("http://16.171.4.184:8000/invoice/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -37,6 +37,6 @@ export const storeinvoice = (invoicedata) => async (dispatch) => {
     console.log(error);
   }
 };
-export const { addToCart, removeFromCart } = CheckoutSlice.actions;
+export const { addToCart, removeFromCart} = CheckoutSlice.actions;
 
 export const CheckoutReducer = CheckoutSlice.reducer;

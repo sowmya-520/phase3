@@ -17,7 +17,7 @@ export const CategorySlice = createSlice({
 
 export const fetchListOfCategories = () => async (dispatch) => {
   try {
-    const response = await fetch("http://127.0.0.1:8000/categories/", {
+    const response = await fetch("http://16.171.4.184:8000/categories/", {
       method: "GET",
     });
     const categories = await response.json();

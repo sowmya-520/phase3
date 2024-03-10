@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {  useNavigate } from "react-router-dom";
-import {removeFromCart, storeinvoice } from './CheckoutSlice'
+import { removeFromCart, storeinvoice } from './CheckoutSlice'
 import { fetchUserId } from "./CustomerIdSlice";
 import CartNavigationBar from "../Navigationbars/CartNavigationBar";
 
